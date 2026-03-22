@@ -1,0 +1,12 @@
+--- 
+- hosts: promethues-server
+  become: true
+  tasks: 
+    - name: apt update
+      apt: 
+       update_cache: yes  
+    - name: Installation of Promethues server on Ubuntu latest 
+      apt: 
+        name: prometheus
+        state: present
+      become: yes

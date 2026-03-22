@@ -1,0 +1,6 @@
+[promethues-server]
+13.221.131.108
+
+[promethues-server:vars]
+ansible_ssh_user=ubuntu
+ansible_ssh_private_key_file=/home/admin/devops2025/ansible-lab/promethues-stack/ansiblekey.pem
